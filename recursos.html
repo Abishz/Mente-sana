@@ -22,35 +22,27 @@
 <body class="d-flex flex-column min-vh-100 bg-light">
 
     <!-- Navegación Principal MenteSana -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
-        <div class="container">
-            <!-- Logo MenteSana -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <i class="fa-solid fa-brain fs-3" style="color: #5B8DEF;"></i>
-                <span class="fw-bold" style="color: #5B8DEF;">MenteSana</span>
-            </a>
-
-            <!-- Botón Responsive Hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenteSana">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menú de Enlaces (4 Páginas) -->
-            <div class="collapse navbar-collapse" id="navbarMenteSana">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin.html"><i class="fa-solid fa-user-gear me-1"></i> Panel Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="recursos.html" style="color: #5B8DEF;"><i class="fa-solid fa-book-bookmark me-1"></i> Recursos</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <!-- Logo con la imagen del proyecto -->
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+            <img src="img/logo-mentesana.jpeg" alt="Logo Mente Sana" width="40" height="40" class="rounded-circle object-fit-cover">
+            <span>Mente Sana</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
+                <li class="nav-item"><a class="nav-link active" href="recursos.html">Recursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Contenido Principal -->
     <main class="container my-5 flex-grow-1">
