@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenteSana - Protección de Datos y Privacidad</title>
+
+    <!-- CDN Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="css/emocionalStyle.css">
+</head>
+<body>
+
+    <div class="container my-5 p-4 p-md-5 card-mentesana shadow-sm">
+        
+        <!-- Encabezado con Logo Oficial de MenteSana -->
+        <header class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="img/logo-mentesana.jpeg" alt="Logotipo oficial MenteSana - Bienestar emocional estudiantil" width="75" height="75" class="rounded-circle">
+                <div>
+                    <h1 class="h2 m-0 text-purple-ms fw-bold">MenteSana</h1>
+                    <p class="text-muted small m-0">Tu bienestar emocional, a un solo clic.</p>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="diario.html">Diario Emocional</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="privacidad.html">Privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr style="color: #DCEEFF; opacity: 1;">
+
+        <main>
+            <!-- REQUERIMIENTO FUNCIONAL 006: Protección de Datos y Confidencialidad -->
+            <section class="mb-5">
+                <h2 class="h4 text-purple-ms fw-bold mb-3">Protección de Datos y Confidencialidad</h2>
+                <p class="text-muted">Consulta los avisos legales, términos e información detallada sobre la seguridad de tus datos dentro de MenteSana:</p>
+
+                <div class="accordion" id="accordionPrivacidad">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Aviso de Privacidad e Información del Estudiante
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPrivacidad">
+                            <div class="accordion-body">
+                                En <strong>MenteSana</strong>, la información recolectada de tu diario emocional y citas psicológicas se utiliza exclusivamente con fines de orientación, apoyo emocional y seguimiento psicológico interno institucional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Políticas de Confidencialidad y Secreto Profesional
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPrivacidad">
+                            <div class="accordion-body">
+                                Todas las sesiones, registros de ánimo y notas clínicas están protegidas bajo secreto profesional. Ninguna información personal o diagnóstica será compartida con terceros sin tu consentimiento expreso, salvo situaciones de riesgo inminente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Derechos ARCO y Seguridad de los Datos
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPrivacidad">
+                            <div class="accordion-body">
+                                Tienes derecho a Acceder, Rectificar, Cancelar u Oponerte (Derechos ARCO) al uso de tus datos guardados en la plataforma. Puedes solicitar la eliminación de tu historial en cualquier momento mediante el formulario de contacto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto -->
+            <section id="contacto" class="mb-4">
+                <h2 class="h4 text-purple-ms fw-bold mb-3">Contacto sobre Privacidad y Datos</h2>
+                <p class="text-muted">Si deseas ejercer tus derechos ARCO o consultar alguna duda sobre el manejo de tu información personal:</p>
+
+                <form id="form-contacto" action="#" method="POST" class="p-4 rounded-3 border bg-light">
+                    <div class="mb-3">
+                        <label for="nombre-contacto" class="form-label fw-bold">Nombre completo:</label>
+                        <input type="text" id="nombre-contacto" name="nombre_contacto" class="form-control" placeholder="Ej. Ana Martínez" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo-contacto" class="form-label fw-bold">Correo electrónico institucional:</label>
+                        <input type="email" id="correo-contacto" name="correo_contacto" class="form-control" placeholder="estudiante@upp.edu.mx" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asunto-contacto" class="form-label fw-bold">Asunto:</label>
+                        <select id="asunto-contacto" name="asunto_contacto" class="form-select" required>
+                            <option value="" disabled selected>-- Seleccione un asunto --</option>
+                            <option value="duda_privacidad">Solicitud / Duda de privacidad de datos</option>
+                            <option value="derechos_arco">Ejercicio de Derechos ARCO</option>
+                            <option value="otro">Otro comentario</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje-contacto" class="form-label fw-bold">Mensaje:</label>
+                        <textarea id="mensaje-contacto" name="mensaje_contacto" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-blue-ms">Enviar Mensaje</button>
+                        <button type="reset" class="btn btn-outline-ms">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <hr class="mt-5" style="color: #DCEEFF; opacity: 1;">
+
+        <footer>
+            <p class="text-center text-muted small m-0">&copy; 2026 MenteSana — Plataforma de bienestar y atención psicológica estudiantil.</p>
+        </footer>
+
+    </div>
+
+    <!-- CDN Bootstrap JS (Requerido para la animación del Accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
