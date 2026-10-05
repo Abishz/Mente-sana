@@ -1,0 +1,114 @@
+
+        :root {
+            --ms-azul: #5B8DEF;
+            --ms-morado: #9B7FEA;
+            --ms-azul-claro: #DCEEFF;
+            --ms-lavanda: #EEE9FF;
+            --ms-texto: #30364D;
+            --ms-blanco: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--ms-texto);
+            background-color: #f4f7f6;
+            font-size: 14px;
+        }
+
+        /* --- Tipografía --- */
+        h1 { font-size: 28px; font-weight: 400; }
+        h2 { font-size: 22px; font-weight: 500; }
+        .subtitulo { font-size: 16px; font-weight: 500; }
+        .cuerpo-pequeno { font-size: 12px; font-weight: 400; }
+
+        /* --- Barra Lateral (Sidebar) --- */
+        .sidebar {
+            background-color: var(--ms-blanco);
+            min-height: 100vh;
+            border-right: 1px solid #e0e0e0;
+            padding-top: 24px;
+        }
+        .sidebar .nav-link {
+            color: var(--ms-texto);
+            font-weight: 500;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        .sidebar .nav-link:hover, .sidebar .nav-link.active {
+            background-color: var(--ms-azul-claro);
+            color: var(--ms-azul);
+        }
+        .sidebar .nav-link i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        /* --- Tarjetas de Resumen --- */
+        .card-resumen {
+            border: none;
+            border-radius: 12px;
+            background-color: var(--ms-blanco);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 24px;
+            transition: transform 0.2s;
+        }
+        .card-resumen:hover {
+            transform: translateY(-2px);
+        }
+        .card-resumen .icono {
+            font-size: 32px;
+            color: var(--ms-azul);
+            margin-bottom: 16px;
+        }
+        .card-resumen .numero {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--ms-texto);
+        }
+
+        /* --- Tablas --- */
+        .tabla-custom {
+            background-color: var(--ms-blanco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .tabla-custom thead {
+            background-color: var(--ms-lavanda);
+            color: var(--ms-texto);
+        }
+        .tabla-custom th {
+            font-weight: 500;
+            padding: 16px;
+        }
+        .tabla-custom td {
+            padding: 16px;
+            vertical-align: middle;
+        }
+
+        /* --- Botones --- */
+        .btn-primary {
+            background-color: var(--ms-azul);
+            border-color: var(--ms-azul);
+            font-weight: 500;
+            border-radius: 8px;
+            padding: 10px 24px;
+        }
+        .btn-primary:hover {
+            background-color: #4a7bd4;
+        }
+        .btn-outline-primary {
+            color: var(--ms-azul);
+            border-color: var(--ms-azul);
+            border-radius: 8px;
+        }
+        .btn-outline-primary:hover {
+            background-color: var(--ms-azul);
+            color: white;
+        }
+
+        /*--- Badges (Estados) ---*/
+        .badge-confirmada { background-color: #d4edda; color: #155724; }
+        .badge-pendiente { background-color: #fff3cd; color: #856404; }
+        .badge-cancelada { background-color: #f8d7da; color: #721c24; }
