@@ -1,0 +1,101 @@
+:root {
+    --azul-principal: #5B8DEF;
+    --morado-principal: #9B7FEA;
+    --azul-claro: #DCEEFF;
+    --lavanda: #EEE9FF;
+    --texto-principal: #30364D;
+    --blanco: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-principal);
+    background-color: #DCEEFF;
+}
+
+/* Barra superior */
+.navbar {
+    background-color: var(--blanco) !important;
+    border-bottom: 4px solid var(--morado-principal);
+}
+
+.navbar-brand {
+    color: var(--azul-principal) !important;
+}
+
+.navbar-text {
+    color: var(--morado-principal) !important;
+    font-weight: 500;
+}
+
+/* Título principal */
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--morado-principal);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--azul-principal);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Tarjetas */
+.card-mente {
+    background-color: var(--blanco);
+    border: 2px solid var(--lavanda);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(91, 141, 239, 0.15);
+}
+
+.card-mente:hover {
+    border-color: var(--morado-principal);
+}
+
+/* Etiquetas */
+.bg-lavanda {
+    background-color: var(--lavanda) !important;
+    color: var(--morado-principal) !important;
+}
+
+/* Botones */
+.btn-mente {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-mente:hover {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+}
+
+/* Confirmación */
+.alert-success {
+    background-color: var(--lavanda);
+    border-color: var(--morado-principal);
+    color: var(--texto-principal);
+}
+
+/* Colores de texto */
+.text-azul {
+    color: var(--azul-principal) !important;
+}
+
+.text-morado {
+    color: var(--morado-principal) !important;
+}
