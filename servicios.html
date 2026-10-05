@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenteSana - Servicios de Atención y Bienestar</title>
+
+    <!-- CDN Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Hoja de Estilos Propia -->
+    <link rel="stylesheet" href="css/emocionalStyle.css">
+</head>
+<body>
+
+    <div class="container my-5 p-4 p-md-5 card-mentesana shadow-sm">
+        
+        <!-- Encabezado con Logo Oficial de MenteSana -->
+        <header class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="img/logo-mentesana.jpeg" alt="Logotipo oficial de MenteSana - Plataforma de bienestar y atención psicológica estudiantil" width="75" height="75" class="rounded-circle">
+                <div>
+                    <h1 class="h2 m-0 text-purple-ms fw-bold">MenteSana</h1>
+                    <p class="text-muted small m-0">Tu bienestar emocional, a un solo clic.</p>
+                </div>
+            </div>
+
+            <!-- Navegación con Accesibilidad -->
+            <nav aria-label="Navegación principal">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emocional.html">Diario Emocional</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacidad.html">Privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr style="color: #DCEEFF; opacity: 1;">
+
+        <main>
+            <!-- SECCIÓN: Catálogo de Servicios -->
+            <section class="mb-5" aria-labelledby="titulo-servicios">
+                <h2 id="titulo-servicios" class="h4 text-purple-ms fw-bold mb-3">Nuestros Servicios de Atención</h2>
+                <p class="text-muted mb-4">Conoce las opciones de apoyo psicológico y bienestar diseñadas para la comunidad estudiantil:</p>
+
+                <!-- Tarjetas de Servicios -->
+                <div class="row g-4">
+                    <!-- Servicio 1 -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-3 bg-light h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-center mb-3">🧠</div>
+                                <h3 class="h5 text-purple-ms fw-bold text-center">Orientación Psicológica</h3>
+                                <p class="text-muted small">Sesiones individuales confidenciales con profesionales en salud mental para abordar estrés académico, ansiedad o situaciones personales.</p>
+                            </div>
+                            <a href="#contacto" class="btn btn-outline-ms w-100 mt-3">Agendar Cita</a>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-3 bg-light h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-center mb-3">👥</div>
+                                <h3 class="h5 text-purple-ms fw-bold text-center">Grupos de Apoyo</h3>
+                                <p class="text-muted small">Espacios seguros de escucha compartida guiados por un moderador, enfocados en el manejo de emociones y la empatía estudiantil.</p>
+                            </div>
+                            <a href="#contacto" class="btn btn-outline-ms w-100 mt-3">Unirme a Grupo</a>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-3 bg-light h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-center mb-3">🌱</div>
+                                <h3 class="h5 text-purple-ms fw-bold text-center">Talleres de Salud Mental</h3>
+                                <p class="text-muted small">Actividades prácticas y charlas sobre mindfulness, autocuidado, inteligencia emocional y técnicas de respiración.</p>
+                            </div>
+                            <a href="#contacto" class="btn btn-outline-ms w-100 mt-3">Ver Calendario</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto / Solicitud de Servicio -->
+            <section id="contacto" class="mb-4" aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto" class="h4 text-purple-ms fw-bold mb-3">Solicitar Información sobre Servicios</h2>
+                <p class="text-muted">¿Quieres consultar la disponibilidad de citas o inscribirte a un taller?</p>
+
+                <form id="form-contacto" action="#" method="POST" class="p-4 rounded-3 border bg-light">
+                    <div class="mb-3">
+                        <label for="nombre-contacto" class="form-label fw-bold">Nombre completo:</label>
+                        <input type="text" id="nombre-contacto" name="nombre_contacto" class="form-control" placeholder="Ej. Ana Martínez" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo-contacto" class="form-label fw-bold">Correo electrónico institucional:</label>
+                        <input type="email" id="correo-contacto" name="correo_contacto" class="form-control" placeholder="estudiante@upp.edu.mx" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asunto-contacto" class="form-label fw-bold">Servicio de interés:</label>
+                        <select id="asunto-contacto" name="asunto_contacto" class="form-select" required aria-label="Selecciona el servicio de interés">
+                            <option value="" disabled selected>-- Seleccione un servicio --</option>
+                            <option value="orientacion_individual">Orientación Psicológica Individual</option>
+                            <option value="grupo_apoyo">Grupo de Apoyo Estudiantil</option>
+                            <option value="taller_bienestar">Taller o Conferencia de Salud Mental</option>
+                            <option value="otro">Otro informe</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje-contacto" class="form-label fw-bold">Mensaje o consulta:</label>
+                        <textarea id="mensaje-contacto" name="mensaje_contacto" class="form-control" rows="4" placeholder="Escribe tus dudas o disponibilidad de horario..." required></textarea>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <button type="submit" class="btn btn-blue-ms">Enviar Solicitud</button>
+                        <button type="reset" class="btn btn-outline-ms">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <hr class="mt-5" style="color: #DCEEFF; opacity: 1;">
+
+        <footer>
+            <p class="text-center text-muted small m-0">&copy; 2026 MenteSana — Plataforma de bienestar y atención psicológica estudiantil.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
