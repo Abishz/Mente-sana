@@ -2,12 +2,26 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #30364D;
-    background-color: #EEE9FF;
+    color: #30364D;          
+    background-color: #EEE9FF; 
 }
 
-.text-purple-ms { color: #9B7FEA; }
-.text-blue-ms { color: #5B8DEF; }
+
+.text-purple-ms {
+    color: #9B7FEA; 
+}
+
+.text-blue-ms {
+    color: #5B8DEF; 
+}
+
+.bg-lavender-ms {
+    background-color: #EEE9FF; 
+}
+
+.bg-blue-light-ms {
+    background-color: #DCEEFF; 
+}
 
 .btn-blue-ms {
     background-color: #5B8DEF;
@@ -17,6 +31,7 @@ body {
     font-weight: 500;
     min-height: 48px;
     padding: 10px 24px;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .btn-blue-ms:hover {
@@ -32,6 +47,7 @@ body {
     font-weight: 500;
     min-height: 48px;
     padding: 8px 24px;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-outline-ms:hover {
@@ -57,6 +73,7 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(155, 127, 234, 0.25);
 }
 
+/* 7. Navegación (Sección 3.5) */
 .nav-pills .nav-link.active {
     background-color: #9B7FEA;
     border-radius: 12px;
@@ -67,7 +84,6 @@ body {
     font-weight: 500;
 }
 
-/* Escala del Registro Emocional */
 .rating-container {
     display: flex;
     justify-content: space-between;
@@ -104,7 +120,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Acordeón */
 .accordion-button:not(.collapsed) {
     background-color: #EEE9FF;
     color: #9B7FEA;
@@ -113,4 +128,32 @@ body {
 
 .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem rgba(155, 127, 234, 0.25);
+}
+
+
+@media (max-width: 576px) {
+    .card-mentesana {
+        padding: 1.25rem !important;
+    }
+
+    .rating-container {
+        gap: 6px;
+    }
+
+    .rating-option label {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+    }
+
+    .btn-blue-ms, .btn-outline-ms {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    nav .nav-pills {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
 }
