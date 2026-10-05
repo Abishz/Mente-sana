@@ -112,3 +112,17 @@
         .badge-confirmada { background-color: #d4edda; color: #155724; }
         .badge-pendiente { background-color: #fff3cd; color: #856404; }
         .badge-cancelada { background-color: #f8d7da; color: #721c24; }
+/* Ajustes de Jerarquía y Estilos de MenteSana */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #30364D;
+}
+
+.btn-primary {
+    background-color: #5B8DEF !important;
+    border-color: #5B8DEF !important;
+}
+
+.btn-primary:hover {
+    background-color: #4A7CE0 !important;
+}
